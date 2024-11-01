@@ -1,0 +1,1002 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004080; /* College color */
+    color: #fff;
+    padding: 20px 20px; /* Add horizontal padding */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out logo and nav */
+}
+
+.logo {
+    display: flex; /* Use flexbox for logo and title */
+    align-items: center; /* Center items vertically within logo div */
+}
+
+.logo-img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Increased space between logo and title */
+}
+
+header .logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Font size for the title */
+    line-height: 1.2; /* Adjust line height for vertical alignment */
+    white-space: nowrap; /* Prevent line break */
+}
+
+
+nav {
+    flex-grow: 1; /* Allow nav to take remaining space */
+    text-align: right; /* Align nav items to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#slider {
+    position: relative;
+    width: 100%; /* Ensure the slider takes full width of its container */
+    max-height: 100%; /* Set a max height for the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.slides {
+    display: flex; /* Align slides in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+    width: 100%; /* Full width for the slides container */
+}
+
+.slide {
+    min-width: 100%; /* Make each slide take full width */
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+#hero {
+    background: transparent; /* Set background to transparent */
+    color: #fff;
+    background-color: #004080;
+    text-align: center;
+    padding: 100px 20px; /* Padding around content */
+    position: relative; /* For positioning content */
+}
+
+h2 {
+    font-size: 2.5em; /* Increase font size for visibility */
+    margin-bottom: 10px; /* Space below title */
+}
+
+p {
+    font-size: 1.2em; /* Increase paragraph font size */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.logo{
+    width: 50%;
+    height: 50%;
+}
+
+.cta-button {
+    background-color: #ffcc00; /* Button color */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.cta-button:hover {
+    background-color: #e6b800; /* Darker shade for hover effect */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 5px;
+}
+
+h2 {
+    color: #004080; /* Section title color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004080; /* College color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Margin adjustment */
+    }
+    
+    #hero {
+        padding: 50px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .cta-button {
+        font-size: 1em; /* Adjust button size */
+    }
+}
+
+/* Slider styles */
+#slider .slide img {
+    width: 100%; /* Ensure the image takes full width of the slide */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#about {
+    background-color: #e6f2ff; /* Light background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding around section */
+    margin: 20px; /* Outer margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.about-container {
+    display: flex; /* Flex layout to align items horizontally */
+    align-items: center; /* Center-align vertically */
+    gap: 20px; /* Space between image and text */
+}
+
+.about-image {
+    flex: 1; /* Allocate 50% width for the image */
+}
+
+.about-image img {
+    width: 100%; /* Full width inside container */
+    border-radius: 5px; /* Rounded corners on the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-text {
+    flex: 2; /* Allocate more width for text */
+}
+
+.about-text h2 {
+    font-size: 2.5em; /* Larger title size */
+    color: #004080; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.about-text h1{
+    font-size: 2.5em; /* Larger title size */
+    color: #004080; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.about-text p {
+    font-size: 1.2em; /* Font size for paragraphs */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line spacing for readability */
+    text-align: justify; /* Justify text alignment */
+    margin-top: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    
+    .about-image, .about-text {
+        flex: 1; /* Reset flex values */
+        width: 10%; /* Full width on small screens */
+    }
+}
+.read-more-button {
+    position: relative; /* Positioning for pseudo-elements */
+    display: inline-block; /* Button style */
+    background-color: #004080; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    margin-top: 15px; /* Space above button */
+    overflow: hidden; /* Hide overflow for effect */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.read-more-button:hover {
+    background-color: #003366; /* Darker background color on hover */
+}
+
+.read-more-button::before,
+.read-more-button::after {
+    content: ''; /* No content, only for visual */
+    position: absolute;
+    height: 10px; /* Line thickness */
+    width: 0; /* Start with 0 width */
+    background-color: #e6f2ff; /* Line color */
+    transition: width 0.4s ease; /* Smooth transition for line width */
+}
+
+.read-more-button::before {
+    top: 0; /* Position at top edge */
+    left: 0; /* Align to left */
+}
+
+.read-more-button::after {
+    bottom: 0; /* Position at bottom edge */
+    right: 0; /* Align to right */
+}
+
+.read-more-button:hover::before {
+    width: 100%; /* Full width on hover */
+}
+
+.read-more-button:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Programs Section Styling */
+#programs {
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+}
+
+/* Title Styling */
+#programs h2 {
+    color: #ffffff; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Card Styling */
+.program-card {
+    perspective: 1000px; /* Perspective for 3D effect */
+    width: 300px; /* Fixed width for cards */
+    margin: 20px; /* Margin for spacing between cards */
+    display: inline-block; /* Keep cards inline */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the card */
+    transition: transform 0.6s; /* Smooth transition for flipping */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+}
+
+.card-inner:hover {
+    transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Ensure both sides occupy full height */
+    backface-visibility: hidden; /* Hide back face when not visible */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Padding for content */
+    overflow: hidden; /* Ensure no overflow occurs */
+    text-align: center;
+    text-shadow: black;
+}
+
+.card-front {
+    background-color: #004080; /* Card front background */
+}
+
+.card-back {
+    background-color: #ca280b; /* Card back background */
+    color: white; /* Text color */
+    transform: rotateY(180deg); /* Rotate back side to hide it */
+    text-align: center;
+}
+
+/* Styling for the image in the card */
+.card-image {
+    width: 100%; /* Make the image take the full width of the card */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 12px; /* Rounded corners for the image */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Styling for the program title */
+.program-title {
+    font-size: 1.5em; /* Increase font size for visibility */
+    color: #ffffff; /* Title color to match the theme */
+    margin: 10px 0; /* Space around the title */
+    text-align: center; /* Center align the title */
+}
+
+/* Optional: Add some hover effect on images if desired */
+.card-front:hover .card-image {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .program-card {
+        width: 90%; /* Adjust card width for smaller screens */
+        margin: 10px auto; /* Center cards on smaller screens */
+    }
+}
+
+
+
+
+.courses{
+    text-align: center;
+    color:black
+}
+
+#awards-recognition {
+    background-color: #e6f2ff; /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 1200px; /* Constrain section width */
+}
+
+
+.award-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.award-image {
+    width: 40%; /* Allocate 40% width to the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.award-text {
+    width: 60%; /* Allocate remaining space to text */
+    color: #004080;
+    text-align: left;
+}
+
+.award-text h2 {
+    font-size: 2em;
+    color: #004080; /* Title color */
+    margin-bottom: 10px;
+}
+
+.award-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #awards-recognition {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    .award-image,
+    .award-text {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+.h1{
+    text-align: center;
+    color:black
+}
+
+/* Placement Section Styling */
+#placement {
+    background: linear-gradient(to right, #004080, #0073e6); /* Gradient background for visual depth */
+    color: #ffffff; /* White text for contrast */
+    padding: 50px 20px; /* Increased padding for spacing */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for emphasis */
+    position: relative; /* For positioning inner elements */
+}
+
+#placement h2 {
+    font-size: 2.5em; /* Larger font size for title */
+    color: #ffcc00; /* Yellow title color to make it pop */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.placement-stats {
+    display: flex; /* Flexbox layout for stats */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center align items */
+    margin-top: 30px; /* Space above stats */
+}
+
+.placement-stat {
+    background-color: #ffffff; /* White background for cards */
+    color: #333; /* Dark text color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    width: 200px; /* Fixed width for stat cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.placement-stat:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.placement-stat h3 {
+    font-size: 2em; /* Stat number font size */
+    color: #004080; /* Main color for numbers */
+    margin: 10px 0; /* Space around stat number */
+}
+
+.placement-stat p {
+    font-size: 1em; /* Description font size */
+    color: #555; /* Darker text color for descriptions */
+    margin: 0; /* Remove margin */
+}
+
+/* Additional Media Query Adjustments */
+@media (max-width: 768px) {
+    .placement-stats {
+        flex-direction: column; /* Stack stats on small screens */
+    }
+
+    .placement-stat {
+        width: 90%; /* Full width on small screens */
+        margin: 10px auto; /* Center-align each stat */
+    }
+}
+
+
+/* Rewards Section Styling */
+#rewards {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center align content */
+    position: relative; /* Positioning for animation */
+    overflow: hidden; /* Hide overflow for sliding effect */
+}
+
+#rewards h2 {
+    font-size: 2.5em; /* Larger font size for title */
+    color: #004080; /* Title color */
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Container for reward images */
+.reward-slider {
+    display: flex; /* Flex layout for alignment */
+    width: 200%; /* Double width for sliding effect */
+    animation: slideRewards 8s infinite; /* Infinite animation */
+    transition: transform 0.5s ease; /* Smooth transition for switching */
+}
+
+/* Styling for individual reward images */
+.reward-image {
+    width: 25%; /* Four images per slide */
+    padding: 10px; /* Space around each image */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.reward-image img {
+    width: 80%; /* Full width for each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideRewards {
+    0%, 50% {
+        transform: translateX(0); /* First set of images */
+    }
+    50.01%, 100% {
+        transform: translateX(-50%); /* Second set of images */
+    }
+}
+
+/* Media Query Adjustments */
+@media (max-width: 768px) {
+    .reward-image {
+        width: 50%; /* Two images per row on smaller screens */
+    }
+}
+
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    width: 80%; /* Occupies 80% of the container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for transform and box-shadow */
+    color: black;
+}
+
+.testimonial-card.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Hover effect */
+.testimonial-card:hover {
+    transform: (1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    background-color: #f0f8ff; /* Optional: Change background color on hover */
+}
+
+.testimonial-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-degree {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.testimonial-company {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.testimonial-package {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1.2em;
+    color: #620303;
+    line-height: 1.6;
+    font-style: italic; /* Add italics for emphasis */
+}
+
+#contact {
+    padding: 20px 10px; /* Padding around the section */
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    color: #004080;
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Set width to 100% of the container */
+    max-width: 600px; /* Optional: Maximum width for larger screens */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize only */
+    height: 80px; /* Fixed height for textarea */
+}
+
+.submit-button {
+    background-color: #004080; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+.submit-button:hover {
+    background-color: #003366; /* Darker shade on hover */
+}
+
+.social-media {
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media h3 {
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.social-icon {
+    display: inline-block; /* Inline block for horizontal alignment */
+    margin: 0 5px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 30px; /* Fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.submit-button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #003366; /* Darker shade for hover effect */
+}
+
+.social-media {
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 30px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+}
+.social-media {
+    margin-top: 20px; /* Space above the social media links */
+    text-align: center; /* Center align the social media section */
+}
+
+.social-media h3 {
+    font-size: 1.2em;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #000000; /* Icon color */
+    padding: 0 10px; /* Space between icons */
+    font-size: 1.5em; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+    margin-bottom: auto;
+}
+
+.social-media a:hover {
+    color: #ff4081; /* Hover color */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: black;
+}
+
+header {
+    background-color: #004080; /* College color */
+    color: #fff;
+    padding: 20px; /* Add horizontal padding */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out logo and nav */
+}
+
+.logo {
+    display: flex; /* Use flexbox for logo and title */
+    align-items: center; /* Center items vertically within logo div */
+}
+
+.logo-img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Increased space between logo and title */
+}
+
+header .logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Font size for the title */
+    line-height: 1.2; /* Adjust line height for vertical alignment */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take remaining space */
+    text-align: right; /* Align nav items to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#slider {
+    position: relative;
+    width: 100%; /* Ensure the slider takes full width of its container */
+    overflow: hidden; /* Hide overflow */
+}
+
+.slides {
+    display: flex; /* Align slides in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+    width: 100%; /* Full width for the slides container */
+}
+
+.slide {
+    min-width: 100%; /* Make each slide take full width */
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+#hero {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Padding around content */
+}
+
+h2 {
+    font-size: 2.5em; /* Increase font size for visibility */
+    margin-bottom: 10px; /* Space below title */
+}
+
+p {
+    font-size: 1.2em; /* Increase paragraph font size */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.cta-button {
+    background-color: #ffcc00; /* Button color */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.cta-button:hover {
+    background-color: #e6b800; /* Darker shade for hover effect */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center; /* Center section headings */
+}
+
+.about-container {
+    display: flex; /* Flex layout for about section */
+    align-items: center; /* Center align vertically */
+}
+
+.about-image {
+    flex: 1; /* Flex grow for image */
+}
+
+.about-image img {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.about-text {
+    flex: 2; /* Allocate 100% width for the text */
+}
+
+.program-card {
+    position: relative;
+    width: 200px; /* Card width */
+    height: 300px; /* Card height */
+    margin: 20px;
+    perspective: 1000px; /* Enable 3D perspective */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    backface-visibility: hidden; /* Hide back face */
+}
+
+.card-front {
+    background-color: #fff; /* Front card background */
+    color: black;
+    display: flex; /* Flex for image and title alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.card-back {
+    background-color: #004080; /* Back card background */
+    color: white;
+    display: flex; /* Flex for content alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transform: rotateY(180deg); /* Rotate back face */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.program-card:hover .card-inner {
+    transform: rotateY(180deg); /* Rotate card on hover */
+}
+
+/* Awards and Recognition Section */
+.award-container {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center align */
+    gap: 20px; /* Space between image and text */
+}
+
+.award-image {
+    width: 300px; /* Adjust width */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.reward-slider {
+    display: flex; /* Horizontal layout for rewards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.reward-image {
+    min-width: 200px; /* Minimum width for reward images */
+    margin: 10px; /* Margin between images */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.placement-stats {
+    display: flex; /* Flex layout for placement statistics */
+    justify-content: center; /* Center align */
+    gap: 20px; /* Space between stats */
+}
+
+.placement-stat {
+    text-align: center; /* Center align text */
+}
+
+@media (max-width: 600px) {
+    .program-card {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .award-image {
+        width: 100%; /* Full width for awards */
+    }
+
+    .reward-image {
+        min-width: 150px; /* Adjust minimum width for rewards */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text */
+    }
+
+    .about-image, .about-text {
+        width: 100%; /* Full width for both sections */
+    }
+}
